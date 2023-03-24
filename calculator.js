@@ -1,25 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<title>Kalkulator Simple</title>
-	<link rel="stylesheet" type="text/css" href="nomor5.css">
-	<script src="nomor5.js"></script>
-</head>
-<body>
-	<div class="sederhana">
-		<h2>Simple Arithmetic<br/>Calculator</h2><hr />
-		<input type="number" placeholder="Number 1" id="num1" />
-		<br />
-		<input type="number" placeholder="Number 2" id="num2" />
-		<br />
-		<button id="add">+</button>
-		<button id="sub">-</button>
-		<button id="mul">*</button>
-		<button id="div">/</button><br />
-		<input type="number" readonly id="result" />
-	</div>
-	<script type="text/javascript">
+
 		var n1 = document.getElementById("num1");
 		var n2 = document.getElementById("num2");
 		var res = document.getElementById("result");
@@ -36,6 +15,3 @@
 		document.getElementById("div").addEventListener("click", function(){
 			res.value = parseInt(n1.value)/parseInt(n2.value);
 		});
-	</script>
-</body>
-</html>
